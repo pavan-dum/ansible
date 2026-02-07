@@ -1,0 +1,10 @@
+- name: "vars accessing from inventory"
+  hosts: local
+  connection: local
+  vars:
+    trainer: "sivakumar reddy"
+  tasks:
+    - name: "access from inventory"
+      ansible.builtin.debug:
+        msg: "course: {{ course }}, trainer: {{ trainer }}"
+      
