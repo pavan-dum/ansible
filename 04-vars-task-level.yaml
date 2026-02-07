@@ -4,8 +4,8 @@
   vars:
     course: "devops with aws"
   tasks:
-    name: "task level course"
-      
-    course: "ansible"
-    ansible.builtin.debug:
-        msg: "course: {{ course  }}, trainer: {{ trainer }}"
+    - name: "task level course"
+      vars:
+        course: "ansible"
+      ansible.builtin.debug:
+        msg: "course: {{ course }}, trainer: {{ trainer }}"
