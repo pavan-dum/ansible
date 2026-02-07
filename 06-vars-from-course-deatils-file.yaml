@@ -1,0 +1,8 @@
+- name: "Vars accessing from course details yaml file"
+  hosts: web
+  vars-files:
+    - course-details.yaml
+  tasks:
+    - name: "accessing course details"
+      ansible.builtin.debug:
+        msg: "course: {{ course }}, trainer: {{ trainer }}, duration: {{ duration }}"
