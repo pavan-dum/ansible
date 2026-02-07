@@ -6,7 +6,7 @@
       prompt: "enter username"
       private: false
 
-    - name: "enter password"
+    - name: "password"
       prompt: "enter password"
       private: true
   
