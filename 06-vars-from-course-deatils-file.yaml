@@ -2,7 +2,7 @@
   hosts: web
   become: yes
   vars-file:
-    - course-details.yaml
+    - course-details.yml
   tasks:
     - name: "accessing course details"
       ansible.builtin.debug:
