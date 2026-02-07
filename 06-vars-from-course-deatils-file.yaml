@@ -1,7 +1,7 @@
 - name: "Vars accessing from course details yaml file"
   hosts: web
   become: yes
-  vars-file:
+  vars_files:
     - course-details.yml
   tasks:
     - name: "accessing course details"
