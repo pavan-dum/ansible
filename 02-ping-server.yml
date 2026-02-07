@@ -1,0 +1,6 @@
+- name: "Pinging server"
+  hosts: web
+  become: yes
+  tasks:
+    - name: "will ping server"
+      ansible.builtin.ping:
