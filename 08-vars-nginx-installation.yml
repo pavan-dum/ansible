@@ -2,11 +2,13 @@
   hosts: web
   become: yes
   tasks:
-    name: nginx
-    ansible.builtin.pakage:
-      state: present
+    - name: Install nginx
+      ansible.builtin.pakage:
+       name: nginx
+       state: present
 
-    name: nginx
-    ansible.builtin.service:
-      state: start
-      enabled: yes
+    - name: nginx
+      ansible.builtin.service:
+       name: nginx
+       state: start
+       enabled: yes
