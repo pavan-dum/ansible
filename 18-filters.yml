@@ -1,0 +1,11 @@
+- name: "Filters are default functions in Ansible"
+  hosts: local
+  connection: local
+  vars:
+    #Greet: "Good Morning.."
+  
+  tasks:
+  - name: "default filter"
+    ansible.builtin.debug:
+      msg: "Hi, sivakumar {{ Greet | default('Good Evening')}}"
+    
