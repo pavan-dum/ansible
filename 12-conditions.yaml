@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    LIVE: true
+    LIVE: false
     session: 7
   tasks:
   - name: "Printing completed sessions"
