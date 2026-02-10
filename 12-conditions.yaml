@@ -2,9 +2,9 @@
   hosts: local
   connection: local
   vars:
-    IS_LIVE: true
+    LIVE: true
   tasks:
   - name: "Printing is system is live or not"
     ansible.builtin.debug:
       msg: " Yes, system is Alive"
-    when: IS_LIVE
+    when: LIVE
