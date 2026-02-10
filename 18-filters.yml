@@ -18,7 +18,7 @@
       - networking topics
       - docker
       - kubernetes
-
+    
   tasks:
   - name: "default filter"
     ansible.builtin.debug:
@@ -35,4 +35,4 @@
 
   - name: "Converting list to Maps/dicts"
     ansible.builtin.debug:
-       msg: "{{ taglist | zip(range(1, taglist | length + 1))| items2dict}}" 
+       msg: "{{ taglist | items2dict}}" 
