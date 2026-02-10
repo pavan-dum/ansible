@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    #Greet: "Good Morning.."
+    Greet: "Good Morning.."
   
   tasks:
   - name: "default filter"
