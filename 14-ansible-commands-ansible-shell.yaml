@@ -1,0 +1,13 @@
+- name: "Ansible commands vs Ansible shell"
+  hosts: local
+  connnection: local
+  tasks:
+  - name: "Ansible shell"
+    ansible.builtin.shell: cat /etc/passwd | grep "root"
+    register: root_users_file
+
+  - name: "Printing shell root users output file"
+    ansible.builtin.debug:
+      msg: "{{ root_users_file }}"
+    
+
