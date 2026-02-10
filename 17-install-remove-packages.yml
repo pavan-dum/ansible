@@ -1,6 +1,6 @@
 - name: Installing and Removing Packages
   hosts: local
-  connnection: local
+  connection: local
   become: yes
   tasks:
   - name: Install & Remove Packages
