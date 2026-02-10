@@ -13,7 +13,7 @@
     
 
   - name: "Ansible Command"
-    ansible.builtin.shell: cat /etc/passwd
+    ansible.builtin.command: cat /etc/passwd
     register: passwd_file
 
   - name: "Printing command passwd file"
