@@ -12,13 +12,13 @@
      }
     
     taglist:
-    - ansible
-    - terraform
-    - cloud
-    - networking topics
-    - docker
-    - kubernetes
-    
+      - ansible
+      - terraform
+      - cloud
+      - networking topics
+      - docker
+      - kubernetes
+
   tasks:
   - name: "default filter"
     ansible.builtin.debug:
