@@ -9,3 +9,8 @@
     ansible.builtin.debug:
       msg: " Yes, completed sessions are {{ session }}"
     when: session > 5
+
+  - name: "Printing system is Alive or not"
+    ansible.builtin.debug:
+      msg: "Yes, System is Alive"
+    when: LIVE
