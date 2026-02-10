@@ -3,9 +3,15 @@
   connection: local
   vars:
     Greet: "Good Morning.."
+    topics: "Linux, Shell, Ansible"
+
   
   tasks:
   - name: "default filter"
     ansible.builtin.debug:
       msg: "Hi, sivakumar {{ Greet | default('Good Evening')}}"
-    
+
+
+  - name: "Converting string to list"
+    ansible.builtin.debug:
+       msg: "{{ topics | split(',')}}"
