@@ -3,8 +3,9 @@
   connection: local
   vars:
     LIVE: true
+    session: 7
   tasks:
-  - name: "Printing is system is live or not"
+  - name: "Printing completed sessions"
     ansible.builtin.debug:
-      msg: " Yes, system is Alive"
-    when: LIVE
+      msg: " Yes, completed sessions are {{ session }}"
+    when: session > 5
