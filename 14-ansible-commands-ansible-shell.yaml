@@ -1,6 +1,6 @@
 - name: "Ansible commands vs Ansible shell"
   hosts: local
-  connnection: local
+  connection: local
   become: yes
   tasks:
   - name: "Ansible shell"
