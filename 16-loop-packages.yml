@@ -1,6 +1,7 @@
 - name: "Ansible Loop Packages"
   hosts: local
   connection: local
+  become: yes
 
   tasks:
   - name: "Installing Packages"
