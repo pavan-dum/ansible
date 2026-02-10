@@ -35,4 +35,4 @@
 
   - name: "Converting list to Maps/dicts"
     ansible.builtin.debug:
-       msg: "{{ taglist | items2dict}}" 
+       msg: "{{ taglist | zip(range(1, taglist | length + 1))| items2dict}}" 
