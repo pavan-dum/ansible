@@ -5,3 +5,8 @@
   - name: "Printing Ansible facts"
     ansible.builtin.debug:
       msg: "Ansible facts: {{ ansible_facts }}"
+  
+  - name: "Print Redhat Distributuiob or not"
+    ansible.builtin.debug:
+      msg: "it is a redhat distribution"
+    when: ansible_facts['os_family'] == "RedHat"
