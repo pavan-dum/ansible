@@ -1,7 +1,7 @@
 - name: Installing and Removing Packages
   hosts: local
   connnection: local
-
+  become: yes
   tasks:
   - name: Install & Remove Packages
     ansible.builtin.package:
