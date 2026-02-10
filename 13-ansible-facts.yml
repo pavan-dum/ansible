@@ -9,4 +9,4 @@
   - name: "Print Redhat Distributuiob or not"
     ansible.builtin.debug:
       msg: "it is a redhat distribution"
-    when: ansible_facts['os_family'] == "Redhat"
+    when: ansible_facts['os_family'] == "RedHat"
