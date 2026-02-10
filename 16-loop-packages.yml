@@ -8,7 +8,7 @@
     ansible.builtin.package:
       name: "{{ item }}"
       state: present
-    loops:
+    loop:
     - mysql
     - nginx
     - zip
