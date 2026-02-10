@@ -1,0 +1,24 @@
+- name: "Data Types"
+  hosts: local
+  connection: local
+  vars:
+    Course: "DevOps with AWS"
+    duration: 140
+    IS_LIVE: true
+    Details:
+      Months: 4
+      Trainer: "sivakumar reddy"
+    Topics:
+    - Linux
+    - Shell
+    - Ansible
+  
+  tasks:
+  - name: "print data types"
+    ansible.builtin.debug:
+      msg: |
+          course: {{ Course }}
+          duration: {{ duration }}
+          IS_Live?: {{ IS_LIVE }}
+          Details: {{ Details }}
+          Topics: {{ Topics }}
