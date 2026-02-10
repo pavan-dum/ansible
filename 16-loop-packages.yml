@@ -1,10 +1,10 @@
-- name: "Ansible Loop Packages"
-  hosts: local
+- name: Ansible Loop Packages
+  hosts: localhost
   connection: local
   become: yes
 
   tasks:
-  - name: "Installing Packages"
+  - name: Installing Packages
     ansible.builtin.package:
       name: "{{ item }}"
       state: present
