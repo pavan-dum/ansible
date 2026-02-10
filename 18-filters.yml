@@ -4,7 +4,12 @@
   vars:
     Greet: "Good Morning.."
     topics: "Linux, Shell, Ansible"
-
+    tagmap:
+     {
+      course: "DevOps with AWS",
+      duration: 140,
+      months: 4
+     }
   
   tasks:
   - name: "default filter"
@@ -15,3 +20,9 @@
   - name: "Converting string to list"
     ansible.builtin.debug:
        msg: "{{ topics | split(',')}}"
+
+  - name: "Converting Maps/dicts to list"
+    ansible.builtin.debug:
+       msg: "{{ tagmap | dict2items}}"
+
+  
