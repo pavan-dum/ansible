@@ -12,3 +12,11 @@
       msg: "{{ root_users_file }}"
     
 
+  - name: "Ansible Command"
+    ansible.builtin.shell: cat /etc/passwd
+    register: passwd_file
+
+  - name: "Printing command passwd file"
+    ansible.builtin.debug:
+      msg: "{{ passwd_file }}"
+
